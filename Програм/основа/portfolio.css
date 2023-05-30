@@ -1,0 +1,81 @@
+body{
+    background: rgb(47, 85, 102);
+    }
+    .name{
+        display: inline;
+        color: rgb(242, 75, 75);
+    }
+    .main__text{
+        color: rgb(215, 203, 187);
+        font-size: 70px;
+        text-align: center;
+    }
+    .first{
+        padding-top: 80px;
+    }
+    .second{
+        padding-top: 50px ;
+    }
+    .link{
+        text-align: center;
+        padding-top: 50px 
+    }
+    
+    .a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    button {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        vertical-align: middle;
+        text-decoration: none;
+        font-size: inherit;
+        font-family: inherit;
+      }
+      button.btn {
+        font-weight: 600;
+        color: #5e5c5b;
+        text-transform: uppercase;
+        padding: 1.25em 2em;
+        background: #fff0f0;
+        border: 2px solid #8a8a8a;
+        border-radius: 0.75em;
+        transition: transform 0.15s;
+        transform-style: preserve-3d;
+      }
+      button.btn::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #b4b4b4;
+        border-radius: inherit;
+    
+        transform: translate3d(0, 0.75em, -1em);
+        transition: transform 0.15s, box-shadow 0.15s;
+      }
+      
+      button.btn:hover {
+        background: #aeaeae;
+        transform: translate(0, 0.25em);
+      }
+      button.btn:hover::before {
+        transform: translate3d(0, 0.5em, -1em);
+      }
+      button.btn:active {
+        background: #828181;
+        transform: translate(0em, 0.75em);
+      }
+      button.btn:active::before {
+        box-shadow: 0 0 0 2px #757575, 0 0 #4d4d4d;
+        transform: translate3d(0, 0, -1em);
+      }
